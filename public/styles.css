@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+body{
+    font-family: 'Rowdies', cursive;
+    background-color: #13005A;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas , .tarjetasAtaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    color: white;
+    width: 180px;
+    height: 100px;
+    background: #00337C;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #03C988;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+.boton-seleccionar-mascota {
+    width: 180px;
+    height: 40px;
+    background: #03C988;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px;
+    border: 2px solid #00337C;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Rowdies', cursive;
+    color: white;
+    display: flex;
+    justify-content: center ;
+    align-items: center;   
+}
+
+
+input {
+    display: none
+}
+
+input:checked + label {
+    background-color: #03C988;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #00337C;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid #00337C;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: 'Rowdies', cursive;
+    color: white;
+}
+
+#mensaje {
+    background-color: #1C82AD;
+    font-size: 30px;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botonReiniciar {
+    border: transparent;
+    color: #03C988;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    text-align: center;
+}
+
+#vidasJugador, #vidasEnemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+#ver-mapa {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    background: #03C988;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 2px solid #00337C;
+    border-radius: 20px;
+    font-family: 'Rowdies', cursive;
+    color: white;
+}
+
+@media (max-width: 360px) {
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
